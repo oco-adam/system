@@ -13,7 +13,7 @@
       }];
     };
     settings = {
-      theme = "base16";
+      theme = "dark_plus";
       editor = {
         line-number = "relative";
         lsp.display-messages = true;
