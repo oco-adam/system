@@ -16,14 +16,14 @@
     settings = {
       max-jobs = 8;
       trusted-users = ["${config.user.name}" "root" "@admin" "@wheel"];
-      trusted-substituters = [
-        "https://cache.nixos.org"
-        "https://kclejeune.cachix.org"
-      ];
-      trusted-public-keys = [
-        "cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY="
-        "kclejeune.cachix.org-1:fOCrECygdFZKbMxHClhiTS6oowOkJ/I/dh9q9b1I4ko="
-      ];
+      # trusted-substituters = [
+      #   "https://cache.nixos.org"
+      #   "https://kclejeune.cachix.org"
+      # ];
+      # trusted-public-keys = [
+      #   "cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY="
+      #   "kclejeune.cachix.org-1:fOCrECygdFZKbMxHClhiTS6oowOkJ/I/dh9q9b1I4ko="
+      # ];
     };
     gc = {
       automatic = true;

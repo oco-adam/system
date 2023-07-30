@@ -110,8 +110,8 @@ def bootstrap(
         "-v",
         "--experimental-features",
         "nix-command flakes",
-        "--extra-substituters",
-        "https://kclejeune.cachix.org",
+        # "--extra-substituters",
+        # "https://kclejeune.cachix.org",
     ]
 
     bootstrap_flake = REMOTE_FLAKE if remote else FLAKE_PATH
