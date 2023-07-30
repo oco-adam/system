@@ -13,17 +13,23 @@
       }];
     };
     settings = {
-      theme = "dark_plus";
       editor = {
+        cursor-shape = {
+          insert = "bar";
+          normal = "block";
+          select = "underline";
+        };
+        file-picker.hidden  = false;
         line-number = "relative";
         lsp.display-messages = true;
       };
       keys.normal = {
+        esc = [ "collapse_selection" "keep_primary_selection" ];
+        space.q = ":q";
         space.space = "file_picker";
         space.w = ":w";
-        space.q = ":q";
-        esc = [ "collapse_selection" "keep_primary_selection" ];
       };
+      theme = "dark_plus";
     };
   };
 }
