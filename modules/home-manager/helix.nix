@@ -6,9 +6,8 @@
       language = [{
         name = "rust";
         auto-format = true;
-      }];
-
-      language = [{
+      }
+      {
         name = "nix";
         auto-format = true;
       }];
