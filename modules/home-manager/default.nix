@@ -54,6 +54,7 @@
     # define package definitions for current user environment
     packages = with pkgs; [
       awscli2
+      aws-sam-cli
       # age
       alejandra
       cachix
