@@ -67,6 +67,13 @@
       # languages
       python3
       ruby
+
+      # rust
+      rustc 
+      cargo
+      clippy
+      rustfmt
+      rust-analyzer
     ];
     etc = {
       home-manager.source = "${inputs.home-manager}";
