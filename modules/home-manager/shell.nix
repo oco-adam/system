@@ -35,7 +35,7 @@ in {
     dotDir = ".config/zsh";
     localVariables = {
       LANG = "en_US.UTF-8";
-      GPG_TTY = "/dev/ttys000";
+      # GPG_TTY = "/dev/ttys000";
       DEFAULT_USER = "${config.home.username}";
       CLICOLOR = 1;
       LS_COLORS = "ExFxBxDxCxegedabagacad";
