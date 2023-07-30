@@ -11,6 +11,8 @@
       la = "${ls} -a";
       ll = "${ls} -la";
       lt = "${ls} -lat";
+      nixswitch = "darwin-rebuild switch --flake ~/.nixpkgs/.#";
+      nixup = "pushd ~/.nixpkgs; nix flake update; nixswitch; popd";
     }
     // lib.optionalAttrs pkgs.stdenvNoCC.isDarwin rec {
       # darwin specific aliases
