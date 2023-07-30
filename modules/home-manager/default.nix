@@ -158,11 +158,11 @@
     zsh.enableCompletion = true;
     zsh.enableAutosuggestions = true;
   #  zsh.syntaxHighlighting.enable = true;
-    zsh.shellAliases = {
-      ls = "ls --color=auto -F";
-      nixswitch = "darwin-rebuild switch --flake ~/.config/nix-darwin/.#";
-      nixup = "pushd ~/.config/nix-darwin; nix flake update; nixswitch; popd";
-    };
+    # zsh.shellAliases = {
+    #   ls = "ls --color=auto -F";
+    #   nixswitch = "darwin-rebuild switch --flake ~/.config/nix-darwin/.#";
+    #   nixup = "pushd ~/.config/nix-darwin; nix flake update; nixswitch; popd";
+    # };
     zoxide.enable = true;
   };
 }
