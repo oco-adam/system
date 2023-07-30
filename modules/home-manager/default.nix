@@ -157,7 +157,7 @@
     zsh.enable = true;
     zsh.enableCompletion = true;
     zsh.enableAutosuggestions = true;
-    zsh.syntaxHighlighting.enable = true;
+  #  zsh.syntaxHighlighting.enable = true;
     zsh.shellAliases = {
       ls = "ls --color=auto -F";
       nixswitch = "darwin-rebuild switch --flake ~/.config/nix-darwin/.#";
