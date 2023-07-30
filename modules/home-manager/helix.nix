@@ -11,5 +11,6 @@
         name = "nix";
         auto-format = true;
       }];
+    };
   };
 }
