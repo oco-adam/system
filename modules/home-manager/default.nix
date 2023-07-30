@@ -9,6 +9,7 @@
     ./dotfiles
     ./fzf.nix
     ./git.nix
+    ./helix.nix
     ./kitty.nix
     ./nushell.nix
     ./nvim
@@ -35,7 +36,7 @@
     # changes in each release.
     stateVersion = "22.05";
     sessionVariables = {
-      GPG_TTY = "/dev/ttys000";
+      # GPG_TTY = "/dev/ttys000";
       EDITOR = "nvim";
       VISUAL = "nvim";
       CLICOLOR = 1;
@@ -121,8 +122,6 @@
       settings.font.normal.family = "MesloLGS Nerd Font Mono";
       settings.font.size = 16;
     };
-    bat.enable = true;
-    bat.config.theme = "TwoDark";
     dircolors.enable = true;
     exa.enable = true;
     fzf.enable = true;
@@ -133,7 +132,6 @@
     git.userName = "Adam Harris";
     go.enable = true;
     # gpg.enable = true;
-    helix.enable = true;
     home-manager = {
       enable = true;
     };
