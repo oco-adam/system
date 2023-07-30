@@ -173,11 +173,11 @@
         system = "x86_64-darwin";
         extraModules = [./profiles/personal.nix ./modules/darwin/apps.nix];
       };
-      "adamharris@aarch64-darwin" = mkDarwinConfig {
+      "adamharriswork@aarch64-darwin" = mkDarwinConfig {
         system = "aarch64-darwin";
         extraModules = [./profiles/work.nix];
       };
-      "adamharris@x86_64-darwin" = mkDarwinConfig {
+      "adamharriswork@x86_64-darwin" = mkDarwinConfig {
         system = "aarch64-darwin";
         extraModules = [./profiles/work.nix];
       };
@@ -220,7 +220,7 @@
         system = "aarch64-darwin";
         extraModules = [./profiles/home-manager/personal.nix];
       };
-      "adamharris@x86_64-linux" = mkHomeConfig {
+      "adamharriswork@x86_64-linux" = mkHomeConfig {
         username = "adamharris";
         system = "x86_64-linux";
         extraModules = [./profiles/home-manager/work.nix];
