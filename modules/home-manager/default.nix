@@ -58,6 +58,7 @@
       # age
       alejandra
       cachix
+      cargo-lambda
       cb
       cirrus-cli
       comma
