@@ -37,8 +37,8 @@
     stateVersion = "22.05";
     sessionVariables = {
       # GPG_TTY = "/dev/ttys000";
-      EDITOR = "nvim";
-      VISUAL = "nvim";
+      # EDITOR = "nvim";
+      # VISUAL = "nvim";
       CLICOLOR = 1;
       LSCOLORS = "ExFxBxDxCxegedabagacad";
       KAGGLE_CONFIG_DIR = "${config.xdg.configHome}/kaggle";
