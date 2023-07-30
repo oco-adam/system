@@ -9,6 +9,7 @@
     ./dotfiles
     ./fzf.nix
     ./git.nix
+    ./gitui.nix
     ./helix.nix
     ./kitty.nix
     ./nushell.nix
