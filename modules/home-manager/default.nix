@@ -116,12 +116,27 @@
   };
 
   programs = {
+    alacritty = {
+      enable = true;
+      settings.font.normal.family = "MesloLGS Nerd Font Mono";
+      settings.font.size = 16;
+    };
+    bat.enable = true;
+    bat.config.theme = "TwoDark";
+    dircolors.enable = true;
+    exa.enable = true;
+    fzf.enable = true;
+    fzf.enableZshIntegration = true;
+    gh.enable = true;
+    git.enable = true;
+    git.userEmail = "adam@omnified.io";
+    git.userName = "Adam Harris";
+    go.enable = true;
+    # gpg.enable = true;
+    helix.enable = true;
     home-manager = {
       enable = true;
     };
-    dircolors.enable = true;
-    go.enable = true;
-    gpg.enable = true;
     htop.enable = true;
     jq.enable = true;
     java = {
@@ -136,8 +151,18 @@
     pandoc.enable = true;
     ripgrep.enable = true;
     starship.enable = true;
+    starship.enableZshIntegration = true;
     yt-dlp.enable = true;
     zathura.enable = true;
+    zsh.enable = true;
+    zsh.enableCompletion = true;
+    zsh.enableAutosuggestions = true;
+    zsh.syntaxHighlighting.enable = true;
+    zsh.shellAliases = {
+      ls = "ls --color=auto -F";
+      nixswitch = "darwin-rebuild switch --flake ~/.config/nix-darwin/.#";
+      nixup = "pushd ~/.config/nix-darwin; nix flake update; nixswitch; popd";
+    };
     zoxide.enable = true;
   };
 }
