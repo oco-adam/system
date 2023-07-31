@@ -26,9 +26,9 @@
       # firmness level for force touch
       SecondClickThreshold = 1;
       # don't allow positional right click
-      TrackpadRightClick = false;
+      TrackpadRightClick = true;
       # three finger drag for space switching
-      # TrackpadThreeFingerDrag = true;
+      TrackpadThreeFingerDrag = true;
     };
 
     # firewall settings
@@ -56,13 +56,15 @@
       mru-spaces = false;
     };
 
+    magicmouse.MouseButtonMode = "TwoButton";
+
     NSGlobalDomain = {
       "com.apple.sound.beep.feedback" = 0;
       "com.apple.sound.beep.volume" = 0.0;
       # allow key repeat
       ApplePressAndHoldEnabled = false;
       # delay before repeating keystrokes
-      InitialKeyRepeat = 10;
+      InitialKeyRepeat = 20;
       # delay between repeated keystrokes upon holding a key
       KeyRepeat = 1;
       AppleShowAllExtensions = true;
