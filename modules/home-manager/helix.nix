@@ -1,16 +1,23 @@
-{config, ...}: {
-  programs.helix  = {
+{...}: {
+  programs.helix = {
     defaultEditor = true;
     enable = true;
     languages = {
-      language = [{
-        name = "rust";
-        auto-format = true;
-      }
-      {
-        name = "nix";
-        auto-format = true;
-      }];
+      language = [
+        {
+          name = "rust";
+          auto-format = true;
+          # config = {
+          #   checkOnSave = { command = "check"; };
+          #   cargo = { features = ["dataframe"]; };
+          # };
+        }
+
+        {
+          name = "nix";
+          auto-format = true;
+        }
+      ];
     };
     settings = {
       editor = {
@@ -19,12 +26,12 @@
           normal = "block";
           select = "underline";
         };
-        file-picker.hidden  = false;
+        file-picker.hidden = false;
         line-number = "relative";
         lsp.display-messages = true;
       };
       keys.normal = {
-        esc = [ "collapse_selection" "keep_primary_selection" ];
+        esc = ["collapse_selection" "keep_primary_selection"];
         space.q = ":q";
         space.space = "file_picker";
         space.w = ":w";

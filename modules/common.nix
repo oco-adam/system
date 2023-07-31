@@ -69,11 +69,12 @@
       ruby
 
       # rust
-      rustc 
+      rustc
       cargo
       clippy
       rustfmt
       rust-analyzer
+      bacon
     ];
     etc = {
       home-manager.source = "${inputs.home-manager}";
@@ -86,6 +87,6 @@
 
   fonts = {
     fontDir.enable = true;
-    fonts = [pkgs.jetbrains-mono (pkgs.nerdfonts.override { fonts = [ "Meslo" ]; })];
+    fonts = [pkgs.jetbrains-mono (pkgs.nerdfonts.override {fonts = ["Meslo"];})];
   };
 }
