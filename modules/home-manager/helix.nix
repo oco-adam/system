@@ -7,10 +7,6 @@
         {
           name = "rust";
           auto-format = true;
-          # config = {
-          #   checkOnSave = { command = "check"; };
-          #   cargo = { features = ["dataframe"]; };
-          # };
         }
 
         {
@@ -18,6 +14,12 @@
           auto-format = true;
         }
       ];
+
+      "language-server.rust-analyzer.config" = {
+        "checkOnSave.command" = "clippy";
+        "cargo.allFeatures" = true;
+        "procMacro.enable" = true;
+      };
     };
     settings = {
       editor = {
