@@ -2,6 +2,7 @@
   home.packages = [pkgs.github-cli pkgs.git-crypt];
   programs.git = {
     userName = "Adam Harris";
+    userEmail = "adam@omnified.io";
     enable = true;
     aliases = {
       ignore = "!gi() { curl -sL https://www.toptal.com/developers/gitignore/api/$@ ;}; gi";
