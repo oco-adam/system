@@ -86,6 +86,6 @@
 
   fonts = {
     fontDir.enable = true;
-    fonts = with pkgs; [jetbrains-mono];
+    fonts = [pkgs.jetbrains-mono (pkgs.nerdfonts.override { fonts = [ "Meslo" ]; })];
   };
 }

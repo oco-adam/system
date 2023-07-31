@@ -11,7 +11,8 @@
       la = "${ls} -a";
       ll = "${ls} -la";
       lt = "${ls} -lat";
-      nixswitchx86 = "darwin-rebuild switch --flake ~/.nixpkgs#adamharris@x86_64-darwin";
+      nixswitch_x86 = "darwin-rebuild switch --flake ~/.nixpkgs#adamharris@x86_64-darwin";
+      nixswitch_arm = "darwin-rebuild switch --flake ~/.nixpkgs#adamharris@aarch64-darwin";
       # nixswitchx86 = "darwin-rebuild switch --flake ~/.nixpkgs#adamharris@x86_64-darwin";
       # nixup = "pushd ~/.nixpkgs; nix flake update; nixswitch; popd";
     }
