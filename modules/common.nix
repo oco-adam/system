@@ -69,7 +69,15 @@
       ruby
 
       # rust
-      rust-bin.stable.latest.default
+      (fenix.complete.withComponents [
+        "cargo"
+        "clippy"
+        "rust-src"
+        "rustc"
+        "rustfmt"
+      ])
+
+      # rust-bin.stable.latest.default
       # rustc
       # cargo
       # clippy

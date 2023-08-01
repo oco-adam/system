@@ -36,16 +36,21 @@
     treefmt-nix.url = "github:numtide/treefmt-nix";
 
     # rust overlay
-    rust-overlay.url = "github:oxalica/rust-overlay";
+    # rust-overlay.url = "github:oxalica/rust-overlay";
+    fenix = {
+      url = "github:nix-community/fenix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = {
     self,
     darwin,
     devenv,
+    fenix,
     flake-utils,
     home-manager,
-    rust-overlay,
+    # rust-overlay,
     ...
   } @ inputs: let
     inherit (flake-utils.lib) eachSystemMap;
@@ -332,7 +337,8 @@
         cb = self.packages.${prev.system}.cb;
         devenv = self.packages.${prev.system}.devenv;
       };
-      rust = rust-overlay.overlays.default;
+      # rust = rust-overlay.overlays.default;
+      fenix = fenix.overlays.default;
     };
   };
 }
