@@ -69,12 +69,13 @@
       ruby
 
       # rust
-      rustc
-      cargo
-      clippy
-      rustfmt
-      rust-analyzer
-      bacon
+      rust-bin.stable.latest.default
+      # rustc
+      # cargo
+      # clippy
+      # rustfmt
+      # rust-analyzer
+      # bacon
     ];
     etc = {
       home-manager.source = "${inputs.home-manager}";
