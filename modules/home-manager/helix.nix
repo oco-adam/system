@@ -14,7 +14,7 @@
           auto-format = true;
         }
       ];
-
+      # todo: clippy errors/actions not showing
       "language-server.rust-analyzer.config" = {
         "checkOnSave.command" = "clippy";
         "cargo.allFeatures" = true;

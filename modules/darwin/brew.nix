@@ -39,6 +39,7 @@
       "kitty"
       "obsidian"
       "raycast"
+      "readdle-spark"
       # "rancher"
       "stats"
       # "utm"
