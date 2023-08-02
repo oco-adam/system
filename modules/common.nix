@@ -69,21 +69,26 @@
       ruby
 
       # rust
-      (fenix.complete.withComponents [
+      (fenix.stable.withComponents [
         "cargo"
         "clippy"
         "rust-src"
         "rustc"
         "rustfmt"
       ])
-      rust-analyzer-nightly
+      # rust-analyzer-nightly
       bacon
+
+      # for cargo-lambda
+      # rustup
+      zig
+
       # rust-bin.stable.latest.default
       # rustc
       # cargo
       # clippy
       # rustfmt
-      # rust-analyzer
+      rust-analyzer
     ];
     etc = {
       home-manager.source = "${inputs.home-manager}";
