@@ -25,6 +25,7 @@
       "1password"
       "1password-cli"
       "alt-tab"
+      "arq"
       # "appcleaner"
       # "bartender"
       "docker"
