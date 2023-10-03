@@ -12,6 +12,7 @@
     ./gitui.nix
     ./helix.nix
     ./kitty.nix
+    ./lazygit.nix
     ./nushell.nix
     ./nvim
     ./shell.nix

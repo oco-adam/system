@@ -80,3 +80,11 @@ This will attempt to detect the host system and install nix-darwin or home-manag
 The `sysdo` utility is a python script that wraps `nix`, `darwin-rebuild`, `nixos-rebuild`,
 and `home-manager` commands to provide a consistent interface across multiple platforms. It has some dependencies which are defined in the `devShell`
 flake output. Documentation for this tool is found in [sysdo.md](./docs/sysdo.md).
+
+
+## rebuilding the system
+
+e.g. you can run:
+```bash
+./result/sw/bin/darwin-rebuild switch --flake /Users/adamharris/.nixpkgs#adamharris@aarch64-darwin
+```
