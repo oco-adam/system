@@ -101,6 +101,6 @@
 
   fonts = {
     fontDir.enable = true;
-    fonts = [pkgs.jetbrains-mono (pkgs.nerdfonts.override {fonts = ["Meslo"];})];
+    fonts = [pkgs.fira-code (pkgs.nerdfonts.override {fonts = ["Meslo"];})];
   };
 }
