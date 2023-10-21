@@ -19,6 +19,7 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
     nixos-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
     devenv.url = "github:cachix/devenv/latest";
+    nix-doom-emacs.url = "github:nix-community/nix-doom-emacs";
 
     # system management
     nixos-hardware.url = "github:nixos/nixos-hardware";

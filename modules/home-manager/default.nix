@@ -20,6 +20,7 @@
     ./tldr.nix
     ./tmux.nix
     ./zellij.nix
+    ./doomemacs.nix
   ];
 
   nixpkgs.config = {
@@ -128,7 +129,11 @@
       settings.font.size = 16;
     };
     dircolors.enable = true;
+    doom-emacs = {
+      enable = true;
+    };
     exa.enable = true;
+
     fzf.enable = true;
     fzf.enableZshIntegration = true;
     gh.enable = true;
