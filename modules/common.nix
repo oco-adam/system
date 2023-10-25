@@ -101,6 +101,10 @@
 
   fonts = {
     fontDir.enable = true;
-    fonts = [pkgs.fira-code (pkgs.nerdfonts.override {fonts = ["Meslo"];})];
+    fonts = [
+      pkgs.fira-code
+      pkgs.fira-code-symbols
+      (pkgs.nerdfonts.override {fonts = ["Meslo"];})
+    ];
   };
 }

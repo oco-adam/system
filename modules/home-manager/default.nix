@@ -21,6 +21,7 @@
     ./tmux.nix
     ./zellij.nix
     ./doomemacs.nix
+    # inputs.nur.hmModules.nur
   ];
 
   nixpkgs.config = {
@@ -128,12 +129,31 @@
       settings.font.normal.family = "MesloLGS Nerd Font Mono";
       settings.font.size = 16;
     };
+    # chromium = {
+    #   enable = true;
+    #   package = pkgs.chromium;
+    #   # extensions = [
+    #   #     { id = "dbepggeogbaibhgnhhndojpepiihcmeb"; }
+    #   # ];
+    # };
     dircolors.enable = true;
     doom-emacs = {
       enable = true;
     };
     exa.enable = true;
+    # firefox = {
+    #   enable = true;
 
+    #   profiles.adamharris = {
+    #     # id = 0;
+    #     # name = "Default";
+    #     isDefault = true;
+    #     # extensions = with pkgs.nur.repos.rycee.firefox-addons; [
+    #     #   darkreader
+    #     #   vimium
+    #     # ];
+    #   };
+    # };
     fzf.enable = true;
     fzf.enableZshIntegration = true;
     gh.enable = true;
@@ -141,6 +161,12 @@
     git.userEmail = "adam@omnified.io";
     git.userName = "Adam Harris";
     go.enable = true;
+    # google-chrome = {
+    #   enable = true;
+    #   # extensions = [
+    #   #   { id = "dbepggeogbaibhgnhhndojpepiihcmeb"; }
+    #   # ];
+    # };
     # gpg.enable = true;
     home-manager = {
       enable = true;

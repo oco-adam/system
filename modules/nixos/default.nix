@@ -55,10 +55,10 @@
 
   # Select internationalisation properties.
   i18n.defaultLocale = "en_US.UTF-8";
-  # console = {
-  #   font = pkgs.jetbrains-mono;
-  #   keyMap = "us";
-  # };
+  console = {
+    font = pkgs.fira-code;
+    keyMap = "us";
+  };
 
   # Set your time zone.
   # time.timeZone = "EST";
